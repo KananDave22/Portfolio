@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD - ewarnInternship</title>
+    <link rel="stylesheet" href="ewarnInternship.css">
+    <link rel="shortcut icon" href="Images/kd_logo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Playwrite+NZ:wght@100..400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="./Images/kd_logo.jpeg" alt="kd_logo" class="kd_logo" />
+          <h1><a href="#" class="kd_name">Kanan Dave</a></h1>
+        </div>
+  
+        <ul id="menuList">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#project">Project</a></li>
+          <li><a href="index.html#certificate">Certifications</a></li>
+        </ul>
+  
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onClick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="ewarnContainer">
+
+            <div class="ewarnContent">
+                <div class="ewarnLeft">
+                    <img src="Images/ewarn_img.png" alt="ewarn Logo" class="ewarnImage">
+                </div>
+    
+                <div class="ewarnRight">
+                    <h1 class="jobPlace"> EWARN Systems </h1>
+                    <h3 class="internDesignation"> Project Intern </h3>
+                    <h4 class="internDuration"> June, 2021 - July,2021 </h4>
+    
+                    <div class="details">
+                        <ul>
+                            <li>Developed a four-way traffic controller to optimize signal control, reducing congestion by 25% during peak hours. </li>
+                            <li>Integrated key parameters for precise traffic density, flow density signal timing for precise calculations.</li>
+                            <li>Prioritized emergency response features for enhanced safety.</li>
+                            <li>Deployed code in the University for a couple of intersections for smooth traffic flow.</li>
+                            <br>
+                            <p class="note"><b>Note:</b> For further information regarding internship details, please feel free to contact me.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <h2 class="footerHeading">Reach out to me</h2>
+  
+        <div class="footSection">
+          <div class="resumeSection">
+            <a href="https://drive.google.com/file/d/1RKXVboqe9M71u2rl1o_Now17H7baIwjp/view?usp=sharing" class="resumeBox">
+              <img
+                src="/Images/ResumeImage1.jpg"
+                alt="Resume Image"
+                class="resumeImg"
+              />
+              <h4 class="downloadResume">Download Resume</h4>
+            </a>
+          </div>
+  
+          <div class="socialSection">
+            <a href="https://www.linkedin.com/in/dave-kanan/">
+              <img
+                src="Images/LinkedinImage.png"
+                alt="LinkedIn Image"
+                class="footerIcons"
+              />
+            </a>
+  
+            <a href="https://github.com/KananDave22">
+              <img
+                src="Images/GithubImage.png"
+                alt="github Image "
+                class="footerIcons"
+              />
+            </a>
+  
+            <a href="mailto:davekanan11@gmail.com">
+              <img
+                src="Images/mailImage.jpeg"
+                alt="Mail Image"
+                class="footerIcons"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+      
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+  
+        function toggleMenu() {
+          if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "300px";
+          } else {
+            menuList.style.maxHeight = "0px";
+          }
+        }
+      </script>
+</body>
+</html>

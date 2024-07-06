@@ -1,0 +1,1109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 2rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kd_logo{
+    height: 7vh;
+    width: 4vw;
+    border-radius: 0.3rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.kd_name{
+    color: yellow;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+nav{
+    padding: .625rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050810;
+    height: 4.375rem;
+    position: relative;
+    /* border: 1px solid white; */
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+#menuList{
+    display: flex;
+    align-items: center;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: #fff;
+    font-size: 1.875rem;
+}
+
+@media (max-width:550px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #222222;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        padding: 20px;
+    }
+
+    .menu-icon{
+        display: block;
+        padding-right: 1rem;
+    }
+
+    #menuList{
+        transition: all 0.5s;
+    }
+
+    /* .kd_logo{
+        display: none;
+    }
+     */
+}
+
+
+/* Designing the Main Section */
+/* Designing for smaller screen  */
+
+@media (max-width:479px){
+    .about_section{
+        background-color: #f1f1f1;
+        width: auto;
+        height: auto;
+        margin: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .left_section{
+        padding: 1rem;
+    }
+
+    .hello{
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #1d1d1f;
+    }
+
+    .para{
+        color: #1d1d1f;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.15rem;
+    }
+
+    .socials{
+        width: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .mail_logo{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right_section{
+        padding: 1rem;
+       
+    }
+    .kd_img{
+        width: 12rem;
+        height: 12rem;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .kd_logo{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* Now Designing for Medium Screen Size */
+@media ((min-width:479px) and  (max-width:767px)){
+
+    #menuList li a{
+        font-size: 1rem;  
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+
+    .about_section{
+        background-color: #f1f1f1;
+        margin: 2rem 1.5rem;
+        border-radius: 1rem;
+        width: auto;
+        height: auto;
+        display: grid;
+        display: flex;
+    }
+
+    .left_section{
+        padding: 1rem;
+        max-width: 70%;
+    }
+
+    .hello{
+
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .para{
+        color: #1d1d1f;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.15rem;
+    }
+
+    .mail_logo{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right_section{
+        max-width: 30%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .kd_img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+
+    .socials{
+        width: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Now Designing for Large Screen Size */
+@media ((min-width:767px) and  (max-width:959px)){
+
+    #menuList li a{
+        font-size: 1rem;  
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+
+    .about_section{
+        background-color: #f1f1f1;
+        margin: 2rem 1.5rem;
+        border-radius: 1rem;
+        width: auto;
+        height: auto;
+        display: grid;
+        display: flex;
+    }
+
+    .left_section{
+        padding: 1rem;
+        max-width: 70%;
+    }
+
+    .hello{
+
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .para{
+        color: #1d1d1f;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.15rem;
+        
+    }
+
+    .mail_logo{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right_section{
+        max-width: 30%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 1rem;
+        
+    }
+    .kd_img{
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+    }
+
+    .socials{
+        width: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Now Designing for X-Large Screen Size */
+@media ((min-width:959px) and  (max-width:1219px)){
+
+    .about_section{
+        background-color: #f1f1f1;
+        margin: 2rem 1.5rem;
+        border-radius: 1rem;
+        width: auto;
+        height: auto;
+        display: grid;
+        display: flex;
+        padding: 0rem 0.8rem;
+    }
+
+    .left_section{
+        padding: 1rem;
+        max-width: 75%;
+        /* border: 2px solid red; */
+    }
+
+    .hello{
+
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .para{
+        color: #1d1d1f;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.15rem;
+    }
+
+    .mail_logo{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right_section{
+        max-width: 25%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 1rem;
+        /* border: 2px solid black; */
+    }
+    .kd_img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+    }
+
+    .socials{
+        width: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Now Designing for 2X-Large Screen Size */
+@media ((min-width:1219px)){
+
+    .about_section{
+        background-color: #f1f1f1;
+        margin: 2rem 1.5rem;
+        border-radius: 1rem;
+        width: auto;
+        height: auto;
+        display: grid;
+        display: flex;
+        padding: 0rem 0.8rem;
+    }
+
+    .left_section{
+        padding: 1rem;
+        max-width: 75%;
+        /* border: 2px solid red; */
+    }
+
+    .hello{
+
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .para{
+        color: #1d1d1f;
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.15rem;
+    }
+
+    .mail_logo{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right_section{
+        max-width: 25%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 1rem;
+        /* border: 2px solid black; */
+    }
+    .kd_img{
+        width: 18rem;
+        height: 17rem;
+        border-radius: 50%;
+    }
+
+    .socials{
+        width: 30%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* ----------------------------About Section Completed--------------------------------------------  */
+
+
+/* --------------------------------------Experience----------------------------------------------- */
+.internships{
+    width: auto;
+    height: auto;
+    margin: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #f1f1f1;
+    padding-bottom: 1rem;
+}
+
+.experienceTitle{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.internshipCard{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    /* border: 1px solid black; */
+}
+
+.internDetails22{
+    text-decoration: none;
+    color: black;
+    height: 70%;
+    width: 100%;
+    margin-bottom: 1rem;
+    /* border: 2px solid red; */
+}
+
+.internLocation1{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+}
+.internshipPosition{
+    font-weight: 500;
+    font-size: medium;
+    text-align: center;
+}
+
+.internshipDuration{
+    font-weight: 400;
+    font-size: small;
+    text-align: center;
+}
+
+.vosynLogo, .valsuraLogo, .ewarnLogo{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+}
+
+.moreInfo{
+    background-color: #717171;
+    width: 8rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.moreInfo:hover{
+    color: rgb(214, 114, 33);
+    box-shadow: 5px 5px 5px rgb(164, 144, 144);
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/* Now Designing for Medium Screen Size */
+@media ((min-width:479px) and  (max-width:767px)){
+    .cards{
+        display: flex;
+    }
+    .internshipCard{
+        width: 30%;
+        height: 70%;
+    }
+    .internDetails22{
+        height: 70%;
+    }
+
+    .internLocation1{
+        font-size: large;
+    }
+}
+
+/* Now Designing for Large Screen Size */
+@media ((min-width:767px) and  (max-width:959px)){
+    .cards{
+        display: flex;
+    }
+    .internshipCard{
+        width: 30%;
+        height: 70%;
+    }
+    .internDetails22{
+        height: 70%;
+    }
+
+    .internLocation1{
+        font-size: larger;
+    }
+
+    .internshipPosition{
+        font-size: large;
+    }
+
+    .internshipDuration{
+        font-size: medium;
+    }
+    
+}
+
+/* Now Designing for X-Large Screen Size */
+@media ((min-width:959px) and  (max-width:1219px)){
+    .cards{
+        display: flex;
+    }
+    .internshipCard{
+        width: 30%;
+        height: 70%;
+    }
+    .internDetails22{
+        height: 70%;
+        /* border: 2px solid brown; */
+    }
+
+    .internLocation1{
+        font-size: 1.4rem;
+    }
+
+    .internshipPosition{
+        font-size: 1.15rem;
+    }
+
+    .internshipDuration{
+        font-size: 1rem;
+    }
+}
+
+/* Now Designing for 2X-Large Screen Size */
+@media ((min-width:1219px)){
+    .cards{
+        display: flex;
+    }
+    .internshipCard{
+        width: 28%;
+        /* height: 70%; */
+    }
+    .internDetails22{
+        height: 70%;
+        
+    }
+
+    .internLocation1{
+        font-size: 1.4rem;
+    }
+
+    .internshipPosition{
+        font-size: 1.2rem;
+    }
+
+    .internshipDuration{
+        font-size: 1.15rem;
+    }
+}
+/* ----------------------------------------- --Education -------------------------------------------*/
+
+.education{
+    width: auto;
+    height: auto;
+    margin: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #f1f1f1;
+    padding-bottom: 1rem;
+}
+
+.educationHeading{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.uwin, .nirma{
+    /* border: 2px solid black; */
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uwinLogo, .nirmaLogo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+.uniLogo{
+    width: 70%;
+    height: 70%;
+    background-color: whitesmoke;
+}
+
+.uniDegree, .uniDuration, .uniResult{
+    /* font-weight: normal;
+    font-size: 0.8rem; */
+    color: #1d1d1f;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* font-size: 0.85rem; */
+    font-size: medium;
+    
+}
+
+
+/* Working on Responsiveness */
+
+/* Now Designing for Medium Screen Size */
+@media ((min-width:479px) and  (max-width:767px)){
+
+    .uwin, .nirma{
+        justify-content: space-around;
+    }
+
+    .uwinLogo, .nirmaLogo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+    }
+
+    .uniLogo{
+        width: 80%;
+        height: 100%;
+    }
+
+    .uniDuration, .uniDegree, .uniResult{
+        /* font-size: 0.9rem; */
+        font-size: medium;
+    }
+}
+
+/* Now Designing for Large Screen Size */
+@media ((min-width:767px) and  (max-width:959px)){
+    .uwin, .nirma{
+        justify-content: space-around;
+    }
+
+    .uwinLogo, .nirmaLogo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+    }
+    .uniDetails{
+        width: 60%;
+    }
+    .uniLogo{
+        width: 80%;
+        height: 100%;
+    }
+
+    .uniDuration, .uniDegree, .uniResult{
+        /* font-size: 0.9rem; */
+        font-size: medium;
+    }
+}
+
+/* Now Designing for X-Large Screen Size */
+@media ((min-width:959px) and  (max-width:1219px)){
+
+    .uwin, .nirma{
+        justify-content: space-around;
+        /* border: 2px solid black; */
+    }
+
+    .uwinLogo, .nirmaLogo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+        /* border: 2px solid red; */
+    }
+    .uniDetails{
+        width: 60%;
+        /* border: 2px solid red; */
+    }
+    .uniLogo{
+        width: 80%;
+        height: 80%;
+    }
+
+    .uniName{
+        font-size: 1.4rem;
+    }
+    .uniDuration, .uniDegree, .uniResult{
+        /* font-size: 1.2rem; */
+        font-size: medium;
+    }
+}
+
+/* Now Designing for 2X-Large Screen Size */
+@media ((min-width:1219px)){
+
+    .educationHeading{
+        /* font-size: 2.3rem; */
+        
+        padding-bottom: 2rem;
+    }
+    .uwin, .nirma{
+        justify-content: space-around;
+        padding-left: 1rem;
+    }
+
+    .uwinLogo, .nirmaLogo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+    }
+    .uniDetails{
+        width: 60%;
+    }
+    .uniLogo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .uniName{
+        font-size: 1.5rem;
+    }
+    .uniDuration, .uniDegree, .uniResult{
+        /* font-size: 1.3rem; */
+        font-size: medium;
+    }
+}
+
+/* -------------------------------------Project ---------------------------------------------------- */
+
+.projectSection{
+    height: auto;
+    width: auto;
+    margin: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #f1f1f1;
+    padding-bottom: 2rem;
+}
+.projectHeading{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.projectBox{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    /* border: 2px solid green; */
+}
+.project{
+    text-decoration: none;
+    color: black;
+    height: 70%;
+}
+.projectTitle{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.projectText{
+    color: #1d1d1f;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.projectImage{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+.exploreMore{
+    background-color: #717171;
+    width: 8rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.exploreMore:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    color: rgb(214, 114, 33);
+    box-shadow: 5px 5px 5px rgb(164, 144, 144);
+}
+
+
+/* Now Designing for Medium Screen Size */
+@media ((min-width:479px) and  (max-width:767px)){
+    .projectContainer{
+        display: flex;
+    }
+
+    .projectBox{
+        width: 28%;
+        margin-top: 2rem;
+    }
+    .projectTitle{
+        font-size: large;
+    }
+
+    .projectText{
+        font-size: medium;
+    }
+
+}
+
+/* Now Designing for Large Screen Size */
+@media ((min-width:767px) and  (max-width:959px)){
+    .projectContainer{
+        display: flex;
+    }
+
+    .projectBox{
+        width: 28%;
+        margin-top: 2rem;
+    }
+    .projectTitle{
+        font-size: large;
+    }
+
+    .projectText{
+        font-size: medium;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Now Designing for X-Large Screen Size */
+@media ((min-width:959px) and  (max-width:1219px)){
+    .projectContainer{
+        display: flex;
+    }
+
+    .projectBox{
+        width: 28%;
+        margin-top: 2rem;
+    }
+    .projectTitle{
+        font-size: large;
+    }
+
+    .projectText{
+        font-size: medium;
+    }
+}
+
+/* Now Designing for 2X-Large Screen Size */
+@media ((min-width:1219px)){
+    .projectContainer{
+        display: flex;
+    }
+
+    .projectBox{
+        width: 28%;
+        margin-top: 2rem;
+    }
+    .projectTitle{
+        font-size: large;
+    }
+
+    .projectText{
+        font-size: medium;
+    }
+}
+/* ---------------------------------------Certification -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+.certifications{
+    width: auto;
+    height: auto;
+    margin: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #f1f1f1;
+    padding-bottom: 2rem;
+}
+
+.certificateHeading{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.certificateBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.certificate{
+    height: 2rem;
+    width: 80%;
+    background-color: #717171;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.certificate:hover{
+    color: rgb(214, 114, 33);
+    /* box-shadow: 7px 7px 7px #9f8e8e; */
+    box-shadow: 5px 5px 5px rgb(164, 144, 144);
+}
+
+/* Now Designing for Medium Screen Size */
+@media ((min-width:479px) and  (max-width:767px)){
+    .certificateBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 2px solid green; */
+        gap: 2rem;
+    }
+    .certificate{
+        height: 2rem;
+        width: 40%;
+    }
+}
+
+/* Now Designing for Large Screen Size */
+@media ((min-width:767px) and  (max-width:959px)){
+    .certificateBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 2px solid green; */
+        gap: 2rem;
+    }
+    .certificate{
+        height: 2rem;
+        width: 30%;
+    }
+}
+
+/* Now Designing for X-Large Screen Size */
+@media ((min-width:959px) and  (max-width:1219px)){
+    .certificateBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 2px solid green; */
+        gap: 2rem;
+    }
+    .certificate{
+        height: 2rem;
+        width: 30%;
+    }
+}
+
+/* Now Designing for 2X-Large Screen Size */
+@media ((min-width:1219px)){
+    .certificateBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* border: 2px solid green; */
+        gap: 2rem;
+    }
+    .certificate{
+        height: 2rem;
+        width: 30%;
+    }
+}
+
+/* --------------------------------Footer Section -------------------------------------------------- */
+footer{
+    border: 0.5px solid silver;
+}
+
+.footerHeading{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.footSection{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid brown; */
+}
+.resumeBox{
+    text-decoration: none;
+    color: black;
+
+}
+.resumeSection{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+
+.downloadResume{
+    text-align: center;
+}
+.socialSection{
+    width: 60%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 0rem 4rem;
+}
+.resumeImg{
+    height: 4rem;
+    width: 4rem;
+    display: block;
+    margin: auto;
+}
+
+.footerIcons{
+    height: 2rem;
+    width: 2rem;
+    background-color:  white;
+    border-radius: 50%;
+}
+
+
